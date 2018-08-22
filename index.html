@@ -7,3 +7,16 @@
       <source src="ps.mp3">
     </audio>
 </html>
+<script>
+    var ua = navigator.userAgent;
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua))
+    {    
+	$('#iframeAudio').remove(); 
+    }  
+	else if(/Chrome/i.test(ua)){  
+	$('#iframeAudio').remove(); 
+	} 
+	else 
+	{   $('#iframeAudio').remove();
+	}  
+	</script>
